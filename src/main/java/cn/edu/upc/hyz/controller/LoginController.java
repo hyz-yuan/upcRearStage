@@ -2,7 +2,6 @@ package cn.edu.upc.hyz.controller;
 
 import cn.edu.upc.hyz.service.LoginService;
 import cn.edu.upc.hyz.service.MailSenderSrvServices;
-import cn.edu.upc.setting.until.SendEmailUtil;
 import cn.edu.upc.setting.until.SysUser;
 import cn.edu.upc.setting.until.exception.BusinessException;
 import cn.edu.upc.setting.until.exception.EmBusinessError;
@@ -36,8 +35,6 @@ public class LoginController {
     @Autowired
     private MailSenderSrvServices mailsend;
     @Autowired
-    private SendEmailUtil sendEmailUtil;
-    @Autowired
     private RolerManageService rolerManageService;
 
     @RequestMapping("/login")
@@ -70,8 +67,6 @@ public class LoginController {
 
 
     }
-
-
 
     @RequestMapping("/sessionTest")
     @ResponseBody
