@@ -1,7 +1,6 @@
 package cn.edu.upc.manage.dao;
 
 import cn.edu.upc.manage.model.Technology;
-import cn.edu.upc.wwp.controller.param.TechnologyParam;
 
 import java.util.LinkedHashMap;
 import java.util.List;

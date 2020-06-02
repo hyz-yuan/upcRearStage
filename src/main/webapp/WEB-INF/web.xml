@@ -73,7 +73,7 @@
 
   <filter>
     <filter-name>CrosFilter</filter-name>
-    <filter-class>cn.edu.upc.dzh.shiro.CrosFilter</filter-class>
+    <filter-class>cn.edu.upc.setting.shiro.CrosFilter</filter-class>
     <!--    <init-param>-->
     <!--      <param-name>targetFilterLifecycle</param-name>-->
     <!--      <param-value>true</param-value>-->
