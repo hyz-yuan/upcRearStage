@@ -30,7 +30,8 @@ public class MessageServiceImpl implements MessageService {
 
     @Override
     public List<ViewMessageState> getMessageList(ViewMessageState message){
-        List<ViewMessageState> list = viewMessageStateMapper.getMessageList(message.getId());
+        List<ViewMessageState> list = viewMessageStateMapper.getMessageList(message.getUserId());
+        System.out.println(list);
         return list;
     }
 

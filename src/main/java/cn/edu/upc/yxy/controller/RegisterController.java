@@ -23,8 +23,8 @@ public class RegisterController {
     @ResponseBody
     @RequestMapping(value = "/register",method = RequestMethod.POST)
     public CommonReturnType register(@RequestBody User user){
-
-            user.setPassword(MD5Util.md5(user.getPassword()));
+            user.setPassword(user.getPassword());
+            //user.setPassword(MD5Util.md5(user.getPassword()));
             registerService.insertUser(user);
             return CommonReturnType.create("注册成功");
 

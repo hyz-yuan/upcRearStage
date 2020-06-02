@@ -5,12 +5,14 @@ import cn.edu.upc.ljh.service.ProjectService;
 import cn.edu.upc.manage.common.CommonReturnType;
 import cn.edu.upc.manage.model.Message;
 import cn.edu.upc.manage.model.Project;
+import cn.edu.upc.manage.model.User;
 import cn.edu.upc.manage.model.ViewMessageState;
 import cn.edu.upc.zy.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -32,14 +34,17 @@ public class MessageController {
     //获取收到的信息模块
     @RequestMapping("/getList")
     @ResponseBody
-    public CommonReturnType getList(@RequestBody ViewMessageState message){
+    public CommonReturnType getList(@RequestBody ViewMessageState message, HttpSession session){
+        User user=(User) session.getAttribute("user");
+        message.setUserId(user.getId());
         return CommonReturnType.create(messageService.getMessageList(message));
     }
     //更新阅读转态
     @RequestMapping("/updateReader")
     @ResponseBody
-    public CommonReturnType updateReader(@RequestBody ViewMessageState message){
-
+    public CommonReturnType updateReader(@RequestBody ViewMessageState message, HttpSession session){
+        User user=(User) session.getAttribute("user");
+        message.setUserId(user.getId());
         messageService.updateReader(message);
         return CommonReturnType.create(null);
     }

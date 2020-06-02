@@ -94,7 +94,7 @@ public class LoginController {
     @ResponseBody
     public CommonReturnType login(@RequestBody JSONObject user,HttpSession session){
         String loginName=user.getString("loginName");
-        String password= MD5Util.md5(user.getString("password"));
+        String password= user.getString("password");
         //String password=MD5Util.md5(password2);
         System.out.println("1用户名和密码："+loginName+password);
 //        Subject subject = SecurityUtils.getSubject();
@@ -214,7 +214,8 @@ public CommonReturnType logout(HttpSession session){
     public CommonReturnType codeMaching(@RequestBody JSONObject jsonObject, final HttpServletRequest request){
         String email=jsonObject.getString("email");
         String code=jsonObject.getString("code");
-        String newPassword= MD5Util.md5(jsonObject.getString("password"));
+        String newPassword= jsonObject.getString("password");
+       // String newPassword= MD5Util.md5(jsonObject.getString("password"));
         HttpSession session=request.getSession();
         String rightCode=session.getAttribute("code").toString();
         System.out.println(code+"   "+rightCode);

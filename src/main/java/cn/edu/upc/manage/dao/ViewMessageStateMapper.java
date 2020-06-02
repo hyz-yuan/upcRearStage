@@ -22,5 +22,5 @@ public interface ViewMessageStateMapper {
      */
     int insertSelective(ViewMessageState record);
 
-    List<ViewMessageState> getMessageList(@Param("id") Integer id);
+    List<ViewMessageState> getMessageList(@Param("UserId") Integer UserId);
 }
