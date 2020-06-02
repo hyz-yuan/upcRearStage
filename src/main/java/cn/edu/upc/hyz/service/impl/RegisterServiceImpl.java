@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service.impl;
 
-import cn.edu.upc.manage.dao.UserMapper;
-import cn.edu.upc.manage.model.User;
+import cn.edu.upc.hyz.manage.dao.UserMapper;
+import cn.edu.upc.hyz.manage.model.User;
 import cn.edu.upc.hyz.service.RegisterService;
 import org.springframework.stereotype.Service;
 

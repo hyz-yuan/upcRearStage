@@ -1,9 +1,9 @@
 package cn.edu.upc.hyz.service;
 
 
-import cn.edu.upc.manage.model.GroupEx;
-import cn.edu.upc.manage.model.GroupUser;
-import cn.edu.upc.manage.model.ViewGroupUser2;
+import cn.edu.upc.hyz.manage.model.GroupEx;
+import cn.edu.upc.hyz.manage.model.GroupUser;
+import cn.edu.upc.hyz.manage.model.ViewGroupUser2;
 
 import java.util.List;
 

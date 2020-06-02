@@ -1,11 +1,11 @@
 package cn.edu.upc.hyz.service.impl;
 
 
-import cn.edu.upc.manage.dao.GroupExMapper;
-import cn.edu.upc.manage.dao.GroupUserMapper;
-import cn.edu.upc.manage.model.GroupEx;
-import cn.edu.upc.manage.model.GroupUser;
-import cn.edu.upc.manage.model.ViewGroupUser2;
+import cn.edu.upc.hyz.manage.dao.GroupExMapper;
+import cn.edu.upc.hyz.manage.dao.GroupUserMapper;
+import cn.edu.upc.hyz.manage.model.GroupEx;
+import cn.edu.upc.hyz.manage.model.GroupUser;
+import cn.edu.upc.hyz.manage.model.ViewGroupUser2;
 import cn.edu.upc.hyz.service.GroupExServiceXJS;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ public class GroupExServiceXJSImpl implements GroupExServiceXJS {
     @Autowired
     private GroupUserMapper GroupUsermapper;
     @Autowired
-    cn.edu.upc.manage.dao.ViewGroupUser2Mapper ViewGroupUser2Mapper;
+    cn.edu.upc.hyz.manage.dao.ViewGroupUser2Mapper ViewGroupUser2Mapper;
     @Override
     public void insertGroupEx(GroupEx groupEx) {
         GroupExmapper.insertSelective(groupEx);

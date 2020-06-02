@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service.impl;
 
-import cn.edu.upc.manage.dao.*;
-import cn.edu.upc.manage.model.*;
+import cn.edu.upc.hyz.manage.dao.*;
+import cn.edu.upc.hyz.manage.model.*;
 import cn.edu.upc.hyz.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

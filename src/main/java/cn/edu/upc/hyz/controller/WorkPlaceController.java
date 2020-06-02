@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.controller;
 
-import cn.edu.upc.manage.common.CommonReturnType;
-import cn.edu.upc.manage.model.WorkPlace;
+import cn.edu.upc.hyz.manage.common.CommonReturnType;
+import cn.edu.upc.hyz.manage.model.WorkPlace;
 import cn.edu.upc.hyz.service.WorkPlaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

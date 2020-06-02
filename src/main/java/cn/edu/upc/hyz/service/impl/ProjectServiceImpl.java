@@ -1,8 +1,8 @@
 package cn.edu.upc.hyz.service.impl;
 
 import cn.edu.upc.setting.until.SysUser;
-import cn.edu.upc.manage.dao.ProjectMapper;
-import cn.edu.upc.manage.model.Project;
+import cn.edu.upc.hyz.manage.dao.ProjectMapper;
+import cn.edu.upc.hyz.manage.model.Project;
 import cn.edu.upc.hyz.service.ProjectService;
 import org.springframework.stereotype.Service;
 

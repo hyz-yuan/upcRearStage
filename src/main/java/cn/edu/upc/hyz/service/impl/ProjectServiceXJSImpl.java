@@ -1,10 +1,10 @@
 package cn.edu.upc.hyz.service.impl;
 
 
-import cn.edu.upc.manage.dao.ProjectMapper;
-import cn.edu.upc.manage.dao.ViewGroupUserMapper;
-import cn.edu.upc.manage.model.ViewGroupUser;
-import cn.edu.upc.manage.model.ViewGroupUser2;
+import cn.edu.upc.hyz.manage.dao.ProjectMapper;
+import cn.edu.upc.hyz.manage.dao.ViewGroupUserMapper;
+import cn.edu.upc.hyz.manage.model.ViewGroupUser;
+import cn.edu.upc.hyz.manage.model.ViewGroupUser2;
 import cn.edu.upc.hyz.service.ProjectServiceXJS;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ public class ProjectServiceXJSImpl implements ProjectServiceXJS {
     @Autowired
     ViewGroupUserMapper  ViewGroupUserMapper;
     @Autowired
-    cn.edu.upc.manage.dao.ViewGroupUser2Mapper ViewGroupUser2Mapper;
+    cn.edu.upc.hyz.manage.dao.ViewGroupUser2Mapper ViewGroupUser2Mapper;
 
     @Override
     public List<String> getProjectName() {

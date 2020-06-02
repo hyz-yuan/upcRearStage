@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service;
 
 
-import cn.edu.upc.manage.model.Report;
+import cn.edu.upc.hyz.manage.model.Report;
 
 import java.util.List;
 

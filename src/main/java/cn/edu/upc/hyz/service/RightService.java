@@ -1,6 +1,6 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.manage.model.Rights;
+import cn.edu.upc.hyz.manage.model.Rights;
 
 import java.util.List;
 

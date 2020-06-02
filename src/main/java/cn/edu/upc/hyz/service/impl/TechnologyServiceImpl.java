@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service.impl;
 
-import cn.edu.upc.manage.dao.TechnologyMapper;
-import cn.edu.upc.manage.model.Technology;
+import cn.edu.upc.hyz.manage.dao.TechnologyMapper;
+import cn.edu.upc.hyz.manage.model.Technology;
 import cn.edu.upc.hyz.service.TechnologyService;
 import org.springframework.stereotype.Service;
 

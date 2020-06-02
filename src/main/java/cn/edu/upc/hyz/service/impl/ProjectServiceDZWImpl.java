@@ -1,8 +1,8 @@
 package cn.edu.upc.hyz.service.impl;
 
 import cn.edu.upc.hyz.service.ProjectServiceDZW;
-import cn.edu.upc.manage.dao.*;
-import cn.edu.upc.manage.model.*;
+import cn.edu.upc.hyz.manage.dao.*;
+import cn.edu.upc.hyz.manage.model.*;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

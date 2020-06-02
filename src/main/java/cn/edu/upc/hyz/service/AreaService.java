@@ -1,6 +1,6 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.manage.model.Area;
+import cn.edu.upc.hyz.manage.model.Area;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package cn.edu.upc.setting.until.exception;
 
-import cn.edu.upc.manage.common.CommonReturnType;
+import cn.edu.upc.hyz.manage.common.CommonReturnType;
 import org.apache.shiro.authz.UnauthenticatedException;
 import org.apache.shiro.authz.UnauthorizedException;
 import org.springframework.http.HttpStatus;

@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.controller;
 
-import cn.edu.upc.manage.common.CommonReturnType;
-import cn.edu.upc.manage.model.*;
+import cn.edu.upc.hyz.manage.common.CommonReturnType;
+import cn.edu.upc.hyz.manage.model.*;
 import cn.edu.upc.hyz.service.GroupExServiceXJS;
 import cn.edu.upc.hyz.service.ProjectServiceXJS;
 import org.springframework.beans.factory.annotation.Autowired;

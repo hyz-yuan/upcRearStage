@@ -1,8 +1,8 @@
 package cn.edu.upc.hyz.service;
 
 
-import cn.edu.upc.manage.model.ViewGroupUser;
-import cn.edu.upc.manage.model.ViewGroupUser2;
+import cn.edu.upc.hyz.manage.model.ViewGroupUser;
+import cn.edu.upc.hyz.manage.model.ViewGroupUser2;
 
 import java.util.List;
 

@@ -2,9 +2,9 @@ package cn.edu.upc.hyz.service.impl;
 
 import cn.edu.upc.hyz.service.EmployeeManageService;
 
-import cn.edu.upc.manage.dao.UserMapper;
-import cn.edu.upc.manage.model.EmployeeSelect;
-import cn.edu.upc.manage.model.EmployeeSelectInput;
+import cn.edu.upc.hyz.manage.dao.UserMapper;
+import cn.edu.upc.hyz.manage.model.EmployeeSelect;
+import cn.edu.upc.hyz.manage.model.EmployeeSelectInput;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

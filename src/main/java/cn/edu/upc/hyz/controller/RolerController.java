@@ -1,8 +1,8 @@
 package cn.edu.upc.hyz.controller;
 
 import cn.edu.upc.hyz.service.RolerManageService;
-import cn.edu.upc.manage.common.CommonReturnType;
-import cn.edu.upc.manage.model.*;
+import cn.edu.upc.hyz.manage.common.CommonReturnType;
+import cn.edu.upc.hyz.manage.model.*;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;

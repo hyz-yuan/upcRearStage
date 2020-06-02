@@ -1,9 +1,9 @@
 package cn.edu.upc.hyz.service.impl;
 
 import cn.edu.upc.hyz.service.PriManageService;
-import cn.edu.upc.manage.dao.RightsMapper;
-import cn.edu.upc.manage.model.RightsSetLN;
-import cn.edu.upc.manage.model.Rights;
+import cn.edu.upc.hyz.manage.dao.RightsMapper;
+import cn.edu.upc.hyz.manage.model.RightsSetLN;
+import cn.edu.upc.hyz.manage.model.Rights;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

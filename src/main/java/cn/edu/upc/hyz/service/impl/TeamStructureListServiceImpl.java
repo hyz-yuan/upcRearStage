@@ -2,7 +2,7 @@ package cn.edu.upc.hyz.service.impl;
 
 
 import cn.edu.upc.hyz.service.TeamStructureListService;
-import cn.edu.upc.manage.dao.TechnologyMapper;
+import cn.edu.upc.hyz.manage.dao.TechnologyMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

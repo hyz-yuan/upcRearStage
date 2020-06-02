@@ -1,8 +1,8 @@
 package cn.edu.upc.hyz.service.impl;
 
 import cn.edu.upc.hyz.service.WorkPlaceService;
-import cn.edu.upc.manage.dao.WorkPlaceMapper;
-import cn.edu.upc.manage.model.WorkPlace;
+import cn.edu.upc.hyz.manage.dao.WorkPlaceMapper;
+import cn.edu.upc.hyz.manage.model.WorkPlace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

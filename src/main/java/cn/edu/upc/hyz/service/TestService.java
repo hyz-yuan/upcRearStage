@@ -1,6 +1,6 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.manage.model.ViewMessageState;
+import cn.edu.upc.hyz.manage.model.ViewMessageState;
 
 import java.util.List;
 

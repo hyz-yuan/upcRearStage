@@ -1,6 +1,6 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.manage.model.Project;
+import cn.edu.upc.hyz.manage.model.Project;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;

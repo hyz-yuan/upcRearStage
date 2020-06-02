@@ -1,6 +1,6 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.manage.model.User;
+import cn.edu.upc.hyz.manage.model.User;
 
 public interface LoginService {
     public User selectByUsername(String userName);
