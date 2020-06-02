@@ -1,6 +1,7 @@
 package cn.edu.upc.dzh.controller;
 
 import cn.edu.upc.dzh.service.LoginService;
+import cn.edu.upc.dzh.service.MailSenderSrvServices;
 import cn.edu.upc.dzh.until.MD5Util;
 import cn.edu.upc.dzh.until.SendEmailUtil;
 import cn.edu.upc.dzh.until.SysUser;
@@ -28,6 +29,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.zip.ZipEntry;
 
 @CrossOrigin
 @Controller
@@ -37,58 +39,12 @@ public class LoginController {
     private UserService userService;
     @Autowired
     private LoginService loginService;
-//    @Autowired
-//    private SysUser sysUser;
+    @Autowired
+    private MailSenderSrvServices mailsend;
     @Autowired
     private SendEmailUtil sendEmailUtil;
     @Autowired
     private RolerManageService rolerManageService;
-
-
-
-//    @RequestMapping("/aa")
-//    @ResponseBody
-//    public CommonReturnType select(){
-//
-////        Integer userId=sysUser.getCurrentUserId();
-////        System.out.println("当前用户的ID是"+userId);
-//        List<User> userList = userService.select();
-//        System.out.println(userList.size());
-//        return CommonReturnType.create(userList);
-//        //return CommonReturnType.create("123");
-//    }
-
-//    @RequestMapping("/login")
-//    @ResponseBody
-//    public CommonReturnType login(@RequestBody JSONObject user){
-//        String loginName=user.getString("loginName");
-//        String password= MD5Util.md5(user.getString("password"));
-//        //String password=MD5Util.md5(password2);
-//        System.out.println("1用户名和密码："+loginName+password);
-//        Subject subject = SecurityUtils.getSubject();
-//        System.out.println("2用户名和密码："+loginName+password);
-//        UsernamePasswordToken token = new UsernamePasswordToken(loginName,password);
-//        Map<String,Object> returnMsg = new HashMap<String, Object>();
-//        try {
-//            subject.login(token);
-//            SecurityUtils.getSubject().getSession().setTimeout(10000);
-//            returnMsg.put("loginTips","登陆成功");
-//            System.out.println("返回权限1");
-//            returnMsg.put("userType",SysUser.getCurrentUserRole());
-//            return CommonReturnType.create(returnMsg);
-//        }
-//        catch (UnknownAccountException e) {
-//            //用户不存在
-//            throw new BusinessException(EmBusinessError.STUDENT_NOT_EXIST);
-//        }
-//        catch (IncorrectCredentialsException e) {
-//            //密码不正确
-//            throw new BusinessException(EmBusinessError.STUDENT_LOGIN_FAIL);
-//        } catch (Exception e) {
-//            //未知异常UNKNOWN_ERROR
-//            throw new BusinessException(EmBusinessError.UNKNOWN_ERROR);
-//        }
-//    }
 
     @RequestMapping("/login")
     @ResponseBody
@@ -131,33 +87,16 @@ public class LoginController {
         return CommonReturnType.create(session);
     }
 
-//    @RequestMapping("/logout")
-//    @ResponseBody
-//    public CommonReturnType logout(){
-//
-////        List<RightRole> r1=r1rolerManageService.selectByRoleId(SysUser.getCurrentUserRole());
-////        return CommonReturnType.create(r1);
-//        Subject subject = SecurityUtils.getSubject();
-//        subject.logout();
-//        return CommonReturnType.create("退出成功");
-//
-//    }
-@RequestMapping("/logout")
-@ResponseBody
-public CommonReturnType logout(HttpSession session){
-
-
-//    Subject subject = SecurityUtils.getSubject();
-//    subject.logout();
-    session.invalidate();
-    return CommonReturnType.create("退出成功");
-
-}
+    @RequestMapping("/logout")
+    @ResponseBody
+    public CommonReturnType logout(HttpSession session){
+        session.invalidate();
+        return CommonReturnType.create("退出成功");
+    }
 
     @RequestMapping("/pleaseLogin")
     @ResponseBody
     public CommonReturnType pleaseLogin(){
-
         throw new BusinessException(EmBusinessError.PLEASE_LOGIN);
     }
 
@@ -168,35 +107,32 @@ public CommonReturnType logout(HttpSession session){
     }
 
     /**
-     * 发送验证码
-     * @param jsonObject
-     * @param request
-     * @return
-     * @throws Exception
-     */
+     *
+     * sendCode
+     * */
     @RequestMapping("/sendCode")
     @ResponseBody
-    public CommonReturnType sendCode(@RequestBody JSONObject jsonObject,final HttpServletRequest request) throws Exception {
-        final String email=jsonObject.getString("email");
+    public CommonReturnType sendCode(@RequestBody JSONObject jsonObject,final HttpServletRequest request){
+
         String realName=jsonObject.getString("realName");
+        String email=jsonObject.getString("email");
 
-//        User user=userService.selectByEmail(email);
         User user=loginService.selectByEmail(email);
-
         if(user!=null){
-            if(user.getRealName().equals(realName)){
-                String code2=smsCode();
-                System.out.println(code2);
-                sendEmailUtil.sendEMail(email,code2);
-
-                final HttpSession session = request.getSession();
-                session.setAttribute("code",code2);
-                return CommonReturnType.create("发送成功");
-            }else {
+            //判断真实姓名正确与否
+            if(!user.getRealName().equals(realName))
                 return CommonReturnType.create("真实姓名不正确");
-            }
+            String code2=smsCode();
 
-        }else {
+            String to = email;  //收件人地址
+            String subject = "验证码";   //邮件标题
+            String content = code2;    //邮件内容
+            mailsend.sendEmail(to,subject,content);    //发送邮件
+
+            final HttpSession session = request.getSession();
+            session.setAttribute("code",code2);
+            return CommonReturnType.create("发送成功");
+        }else{
             return CommonReturnType.create("邮箱没有注册");
         }
 
