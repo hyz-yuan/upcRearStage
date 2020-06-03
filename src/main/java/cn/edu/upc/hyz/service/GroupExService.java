@@ -7,7 +7,7 @@ import cn.edu.upc.hyz.manage.model.ViewGroupUser2;
 
 import java.util.List;
 
-public interface GroupExServiceXJS {
+public interface GroupExService {
     /**
      * 插入小组内容
      *

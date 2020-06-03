@@ -6,7 +6,7 @@ import cn.edu.upc.hyz.manage.dao.GroupUserMapper;
 import cn.edu.upc.hyz.manage.model.GroupEx;
 import cn.edu.upc.hyz.manage.model.GroupUser;
 import cn.edu.upc.hyz.manage.model.ViewGroupUser2;
-import cn.edu.upc.hyz.service.GroupExServiceXJS;
+import cn.edu.upc.hyz.service.GroupExService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.List;
 
 @Service("groupExService5")
-public class GroupExServiceXJSImpl implements GroupExServiceXJS {
+public class GroupExServiceImpl implements GroupExService {
     @Autowired
     private GroupExMapper GroupExmapper;
     @Autowired

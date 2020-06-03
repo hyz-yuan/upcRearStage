@@ -41,6 +41,7 @@ public class ProjectControllertest {
     @RequestMapping(value = "/changeProject")
     @ResponseBody
     public CommonReturnType changeProject(@RequestBody Project project) {
+        System.out.println(project.getManager());
         projectServiceDZW.changeProject(project);
         List<ViewProject> projectList = projectServiceDZW.getViewProjectList();
         return CommonReturnType.create(projectList, "修改成功");
