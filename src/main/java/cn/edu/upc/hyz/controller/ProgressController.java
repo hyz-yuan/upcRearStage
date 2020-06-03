@@ -3,6 +3,7 @@ package cn.edu.upc.hyz.controller;
 import cn.edu.upc.hyz.manage.common.CommonReturnType;
 import cn.edu.upc.hyz.manage.model.Progress;
 import cn.edu.upc.hyz.service.ProgressService;
+import cn.edu.upc.hyz.service.ProgressServiceXJS;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,8 @@ public class ProgressController {
 
     @Autowired
     private ProgressService progressService;
-
+    @Autowired
+    private ProgressServiceXJS progressService2;
 
     @RequestMapping("/getProgressList")
     @ResponseBody
@@ -47,5 +49,34 @@ public class ProgressController {
         progressService.update(progress);
         List<Progress> p=progressService.selectByProjectId(progress.getProjectId());
         return CommonReturnType.create(p);
+    }
+    @RequestMapping("/getProgressList1")
+    @ResponseBody
+    public CommonReturnType getData(@RequestBody Progress projectId) {
+        List<Progress> list = progressService2.selectProgress(projectId);
+        return CommonReturnType.create(list);
+    }
+
+    @RequestMapping("/addProgress")
+    @ResponseBody
+    public CommonReturnType addProgress(@RequestBody Progress progress) {
+        progressService2.insertProgress(progress);
+        return CommonReturnType.create(null);
+    }
+
+    @RequestMapping("/updateProgress")
+    @ResponseBody
+    public CommonReturnType updateProgress(@RequestBody Progress change) {
+        progressService2.updateDel(change);
+        List<Progress> list = progressService2.select();
+        return CommonReturnType.create(list);
+    }
+
+    @RequestMapping("/deleteProgress")
+    @ResponseBody
+    public CommonReturnType deleteProgress(@RequestBody Progress delete) {
+        progressService2.updateDelete(delete);
+        List<Progress> list = progressService2.select();
+        return CommonReturnType.create(list);
     }
 }

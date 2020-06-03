@@ -18,7 +18,7 @@ import java.util.List;
 @CrossOrigin
 @Controller
 @RequestMapping(value = "/project1", method = {RequestMethod.POST, RequestMethod.GET})
-public class ProjectControllerDZW {
+public class ProjectControllertest {
 
     @Autowired
     private ProjectServiceDZW projectServiceDZW;

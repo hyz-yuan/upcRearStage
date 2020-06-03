@@ -15,8 +15,8 @@ import java.util.List;
 public class WorkPlaceController {
     @Autowired
     public WorkPlaceService workPlaceService;
-    @RequestMapping("/selectWorkPlace")
 
+    @RequestMapping("/selectWorkPlace")
     @ResponseBody
     public CommonReturnType select(){
 
@@ -51,5 +51,11 @@ public class WorkPlaceController {
     public CommonReturnType deleteFlag(@RequestBody WorkPlace recordDel){
         workPlaceService.deleteFlag(recordDel);
         return  CommonReturnType.create("null");
+    }
+    @RequestMapping("/list")
+    @ResponseBody
+    public CommonReturnType workPlaceList(){
+        List<WorkPlace> workPlaceList = workPlaceService.workPlaceList();
+        return CommonReturnType.create(workPlaceList,"成功返回所有地点");
     }
 }

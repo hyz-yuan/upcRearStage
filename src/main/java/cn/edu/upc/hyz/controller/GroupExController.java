@@ -13,7 +13,7 @@ import java.util.List;
 @CrossOrigin
 @Controller
 @RequestMapping(value = "/project", method = {RequestMethod.POST, RequestMethod.GET})
-public class GroupExControllerXJS {
+public class GroupExController {
     @Autowired
     private GroupExServiceXJS groupExServiceXJS;
     @Autowired

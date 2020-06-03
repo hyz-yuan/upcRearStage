@@ -20,7 +20,7 @@ import java.util.List;
 @CrossOrigin
 @Controller
 @RequestMapping(value = "/project2", method = {RequestMethod.POST, RequestMethod.GET})
-public class ProjectControllerGSL {
+public class ProjectControllertest2 {
 
     @Autowired
     private ProjectServiceGSL projectService;
