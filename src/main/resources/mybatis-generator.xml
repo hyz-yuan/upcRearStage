@@ -8,10 +8,10 @@
     <context id="context" targetRuntime="MyBatis3">
 
         <!-- 数据库的相关配置 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://58.87.74.112:3306/2019net?serverTimezone=UTC"
-                        userId="manage"
-                        password="upc2020">
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/2019net?serverTimezone=UTC"
+                        userId="root"
+                        password="123456">
         </jdbcConnection>
         <!-- 实体类生成的位置 -->
         <javaModelGenerator targetPackage="cn.edu.upc.hyz.manage.model" targetProject="src/main/java">
