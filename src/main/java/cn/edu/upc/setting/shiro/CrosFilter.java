@@ -1,7 +1,7 @@
 package cn.edu.upc.setting.shiro;
 
 import cn.edu.upc.setting.until.exception.BusinessException;
-import cn.edu.upc.hyz.manage.model.User;
+import cn.edu.upc.hyz.model.User;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

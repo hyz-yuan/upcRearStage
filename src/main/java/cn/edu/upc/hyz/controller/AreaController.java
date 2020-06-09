@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.controller;
 
-import cn.edu.upc.hyz.manage.common.CommonReturnType;
-import cn.edu.upc.hyz.manage.model.Area;
+import cn.edu.upc.hyz.common.CommonReturnType;
+import cn.edu.upc.hyz.model.Area;
 import cn.edu.upc.hyz.service.AreaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

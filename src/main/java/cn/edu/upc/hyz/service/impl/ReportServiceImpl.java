@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service.impl;
 
-import cn.edu.upc.hyz.manage.dao.ReportMapper;
-import cn.edu.upc.hyz.manage.model.Report;
+import cn.edu.upc.hyz.dao.ReportMapper;
+import cn.edu.upc.hyz.model.Report;
 import cn.edu.upc.hyz.service.ReportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

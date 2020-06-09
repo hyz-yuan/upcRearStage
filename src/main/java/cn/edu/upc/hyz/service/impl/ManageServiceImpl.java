@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service.impl;
 
-import cn.edu.upc.hyz.manage.dao.ManageMapper;
-import cn.edu.upc.hyz.manage.model.Manage;
+import cn.edu.upc.hyz.dao.ManageMapper;
+import cn.edu.upc.hyz.model.Manage;
 import cn.edu.upc.hyz.service.ManageService;
 import org.springframework.stereotype.Service;
 

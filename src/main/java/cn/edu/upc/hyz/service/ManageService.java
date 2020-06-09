@@ -1,6 +1,6 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.hyz.manage.model.Manage;
+import cn.edu.upc.hyz.model.Manage;
 
 import java.util.List;
 

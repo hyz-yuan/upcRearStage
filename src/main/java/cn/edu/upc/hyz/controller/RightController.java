@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.controller;
 
-import cn.edu.upc.hyz.manage.common.CommonReturnType;
-import cn.edu.upc.hyz.manage.model.Rights;
+import cn.edu.upc.hyz.common.CommonReturnType;
+import cn.edu.upc.hyz.model.Rights;
 import cn.edu.upc.hyz.service.impl.RightServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

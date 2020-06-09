@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service;
 
 
-import cn.edu.upc.hyz.manage.model.Role;
+import cn.edu.upc.hyz.model.Role;
 
 import java.util.List;
 

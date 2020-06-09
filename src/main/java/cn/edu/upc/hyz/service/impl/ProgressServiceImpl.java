@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service.impl;
 
-import cn.edu.upc.hyz.manage.dao.ProgressMapper;
-import cn.edu.upc.hyz.manage.model.Progress;
+import cn.edu.upc.hyz.dao.ProgressMapper;
+import cn.edu.upc.hyz.model.Progress;
 import cn.edu.upc.hyz.service.ProgressService;
 import org.springframework.stereotype.Service;
 

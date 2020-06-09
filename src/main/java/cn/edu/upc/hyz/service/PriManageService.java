@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.hyz.manage.model.RightsSetLN;
-import cn.edu.upc.hyz.manage.model.Rights;
+import cn.edu.upc.hyz.model.RightsSetLN;
+import cn.edu.upc.hyz.model.Rights;
 
 import java.util.List;
 

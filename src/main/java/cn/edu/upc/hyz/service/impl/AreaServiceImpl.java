@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service.impl;
 
-import cn.edu.upc.hyz.manage.dao.AreaMapper;
-import cn.edu.upc.hyz.manage.model.Area;
+import cn.edu.upc.hyz.dao.AreaMapper;
+import cn.edu.upc.hyz.model.Area;
 import cn.edu.upc.hyz.service.AreaService;
 import org.springframework.stereotype.Service;
 

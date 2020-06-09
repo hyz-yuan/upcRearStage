@@ -1,8 +1,8 @@
 package cn.edu.upc.hyz.service.impl;
 
 
-import cn.edu.upc.hyz.manage.dao.RoleMapper;
-import cn.edu.upc.hyz.manage.model.Role;
+import cn.edu.upc.hyz.dao.RoleMapper;
+import cn.edu.upc.hyz.model.Role;
 import cn.edu.upc.hyz.service.RoleService;
 import org.springframework.stereotype.Service;
 

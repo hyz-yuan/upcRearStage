@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.controller;
 
-import cn.edu.upc.hyz.manage.common.CommonReturnType;
-import cn.edu.upc.hyz.manage.model.Progress;
+import cn.edu.upc.hyz.common.CommonReturnType;
+import cn.edu.upc.hyz.model.Progress;
 import cn.edu.upc.hyz.service.ProgressService;
 import cn.edu.upc.hyz.service.ProgressServiceXJS;
 import org.springframework.beans.factory.annotation.Autowired;

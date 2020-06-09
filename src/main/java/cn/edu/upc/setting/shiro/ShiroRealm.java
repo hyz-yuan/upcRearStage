@@ -1,7 +1,7 @@
 package cn.edu.upc.setting.shiro;
 
-import cn.edu.upc.hyz.manage.dao.UserMapper;
-import cn.edu.upc.hyz.manage.model.User;
+import cn.edu.upc.hyz.dao.UserMapper;
+import cn.edu.upc.hyz.model.User;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;

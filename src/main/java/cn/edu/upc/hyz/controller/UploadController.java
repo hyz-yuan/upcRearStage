@@ -1,6 +1,6 @@
 package cn.edu.upc.hyz.controller;
 
-import cn.edu.upc.hyz.manage.common.CommonReturnType;
+import cn.edu.upc.hyz.common.CommonReturnType;
 import org.apache.commons.io.IOUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

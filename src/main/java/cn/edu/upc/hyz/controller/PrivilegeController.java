@@ -2,10 +2,10 @@ package cn.edu.upc.hyz.controller;
 
 import cn.edu.upc.setting.until.SysUser;
 import cn.edu.upc.hyz.service.PriManageService;
-import cn.edu.upc.hyz.manage.common.CommonReturnType;
-import cn.edu.upc.hyz.manage.model.Rights;
-import cn.edu.upc.hyz.manage.model.RightsSetLN;
-import cn.edu.upc.hyz.manage.model.Test;
+import cn.edu.upc.hyz.common.CommonReturnType;
+import cn.edu.upc.hyz.model.Rights;
+import cn.edu.upc.hyz.model.RightsSetLN;
+import cn.edu.upc.hyz.model.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

@@ -1,8 +1,8 @@
 package cn.edu.upc.hyz.service.impl;
 
 import cn.edu.upc.setting.until.SysUser;
-import cn.edu.upc.hyz.manage.dao.ViewTasksMapper;
-import cn.edu.upc.hyz.manage.model.ViewTasks;
+import cn.edu.upc.hyz.dao.ViewTasksMapper;
+import cn.edu.upc.hyz.model.ViewTasks;
 import cn.edu.upc.hyz.service.ViewTasksService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

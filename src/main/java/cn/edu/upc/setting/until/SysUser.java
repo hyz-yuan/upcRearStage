@@ -1,6 +1,6 @@
 package cn.edu.upc.setting.until;
 
-import cn.edu.upc.hyz.manage.model.User;
+import cn.edu.upc.hyz.model.User;
 
 import javax.servlet.http.HttpSession;
 

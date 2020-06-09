@@ -1,6 +1,6 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.hyz.manage.model.WorkPlace;
+import cn.edu.upc.hyz.model.WorkPlace;
 
 import java.util.List;
 

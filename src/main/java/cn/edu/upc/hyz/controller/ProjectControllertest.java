@@ -1,8 +1,8 @@
 package cn.edu.upc.hyz.controller;
 
 import cn.edu.upc.hyz.service.ProjectServiceDZW;
-import cn.edu.upc.hyz.manage.common.CommonReturnType;
-import cn.edu.upc.hyz.manage.model.*;
+import cn.edu.upc.hyz.common.CommonReturnType;
+import cn.edu.upc.hyz.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

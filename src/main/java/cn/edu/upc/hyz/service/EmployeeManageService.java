@@ -1,7 +1,7 @@
 package cn.edu.upc.hyz.service;
 
-import cn.edu.upc.hyz.manage.model.EmployeeSelect;
-import cn.edu.upc.hyz.manage.model.EmployeeSelectInput;
+import cn.edu.upc.hyz.model.EmployeeSelect;
+import cn.edu.upc.hyz.model.EmployeeSelectInput;
 
 import java.util.List;
 

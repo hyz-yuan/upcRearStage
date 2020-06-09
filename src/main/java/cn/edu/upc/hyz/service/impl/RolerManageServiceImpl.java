@@ -1,10 +1,10 @@
 package cn.edu.upc.hyz.service.impl;
 
 import cn.edu.upc.hyz.service.RolerManageService;
-import cn.edu.upc.hyz.manage.dao.RightRoleMapper;
-import cn.edu.upc.hyz.manage.dao.RoleMapper;
-import cn.edu.upc.hyz.manage.dao.ViewRightsRoleMapper;
-import cn.edu.upc.hyz.manage.model.*;
+import cn.edu.upc.hyz.dao.RightRoleMapper;
+import cn.edu.upc.hyz.dao.RoleMapper;
+import cn.edu.upc.hyz.dao.ViewRightsRoleMapper;
+import cn.edu.upc.hyz.model.*;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
