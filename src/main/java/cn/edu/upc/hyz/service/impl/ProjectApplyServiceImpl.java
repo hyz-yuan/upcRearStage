@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Service
+@Service("ProjectApplyService")
 public class ProjectApplyServiceImpl implements ProjectApplyService {
     @Resource
     ProjectApplyMapper projectApplyMapper;
@@ -31,12 +31,12 @@ public class ProjectApplyServiceImpl implements ProjectApplyService {
 
     @Override
     public int passedApplication(ProjectApply apply) {
-        return projectApplyMapper.deleteByPrimaryKey(apply);
+        return projectApplyMapper.deleteFlagByPrimaryKey(apply);
     }
 
     @Override
     public int deleteApplication(ProjectApply apply) {
-        return projectApplyMapper.deleteByPrimaryKey(apply);
+        return projectApplyMapper.deleteFlagByPrimaryKey(apply);
     }
 
     @Override

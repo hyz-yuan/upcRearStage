@@ -20,6 +20,7 @@ import java.util.List;
 public class ProjectApplyController {
     @Autowired
     ProjectApplyService projectApplyService;
+
     /*获取用户申请列表*/
     @RequestMapping("/userList")
     @ResponseBody
@@ -29,7 +30,7 @@ public class ProjectApplyController {
         return CommonReturnType.create(list);
     }
     /*获取所有申请列表*/
-    @RequestMapping("/userList")
+    @RequestMapping("/allList")
     @ResponseBody
     public CommonReturnType allList() {
         List<ProjectApply> list = projectApplyService.selectAllApplicant();

@@ -14,5 +14,5 @@ public interface ProjectApplyMapper {
     List<ProjectApply> selectAllListByApplicant(Integer id);
     int updateByPrimaryKeySelective(ProjectApply record);
     int updateByPrimaryKey(ProjectApply record);
-    int deleteByPrimaryKey(ProjectApply record);
+    int deleteFlagByPrimaryKey(ProjectApply record);
 }
