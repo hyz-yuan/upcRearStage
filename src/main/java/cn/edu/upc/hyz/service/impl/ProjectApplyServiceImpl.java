@@ -4,10 +4,12 @@ import cn.edu.upc.hyz.dao.ProjectApplyMapper;
 import cn.edu.upc.hyz.model.Project;
 import cn.edu.upc.hyz.model.ProjectApply;
 import cn.edu.upc.hyz.service.ProjectApplyService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
 
+@Service
 public class ProjectApplyServiceImpl implements ProjectApplyService {
     @Resource
     ProjectApplyMapper projectApplyMapper;
@@ -35,5 +37,10 @@ public class ProjectApplyServiceImpl implements ProjectApplyService {
     @Override
     public int deleteApplication(ProjectApply apply) {
         return projectApplyMapper.deleteByPrimaryKey(apply);
+    }
+
+    @Override
+    public int updateApplication(ProjectApply apply) {
+        return projectApplyMapper.updateByPrimaryKeySelective(apply);
     }
 }

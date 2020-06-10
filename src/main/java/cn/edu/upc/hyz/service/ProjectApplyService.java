@@ -15,5 +15,6 @@ public interface ProjectApplyService {
     int passedApplication(ProjectApply apply);
     /*删除申请*/
     int deleteApplication(ProjectApply apply);
-
+    /*修改申请*/
+    int updateApplication(ProjectApply apply);
 }
