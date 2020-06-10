@@ -50,5 +50,7 @@
                <!--enableUpdateByExample="false"/>-->
         <!--<table tableName="rights" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
                <!--enableUpdateByExample="false"/>-->
+        <table tableName="project_apply" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+        enableUpdateByExample="false"/>
     </context>
 </generatorConfiguration>
