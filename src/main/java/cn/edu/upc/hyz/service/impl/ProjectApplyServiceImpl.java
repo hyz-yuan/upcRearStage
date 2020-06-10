@@ -1,6 +1,7 @@
 package cn.edu.upc.hyz.service.impl;
 
 import cn.edu.upc.hyz.dao.ProjectApplyMapper;
+import cn.edu.upc.hyz.model.Project;
 import cn.edu.upc.hyz.model.ProjectApply;
 import cn.edu.upc.hyz.service.ProjectApplyService;
 
@@ -13,26 +14,26 @@ public class ProjectApplyServiceImpl implements ProjectApplyService {
 
     @Override
     public List<ProjectApply> selectAllApplicant() {
-        return null;
+        return projectApplyMapper.selectAllList();
     }
 
     @Override
     public List<ProjectApply> selectByApplicant(Integer id) {
-        return null;
+        return projectApplyMapper.selectAllListByApplicant(id);
     }
 
     @Override
     public int applyProject(ProjectApply apply) {
-        return 0;
+        return projectApplyMapper.insertSelective(apply);
     }
 
     @Override
     public int passedApplication(ProjectApply apply) {
-        return 0;
+        return projectApplyMapper.deleteByPrimaryKey(apply);
     }
 
     @Override
     public int deleteApplication(ProjectApply apply) {
-        return 0;
+        return projectApplyMapper.deleteByPrimaryKey(apply);
     }
 }
