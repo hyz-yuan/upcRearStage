@@ -1,4 +1,4 @@
-package cn.edu.upc.hyz.utils;
+package cn.edu.upc.setting.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
